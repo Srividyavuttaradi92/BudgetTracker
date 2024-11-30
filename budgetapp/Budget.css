@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 450px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.form {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input, select {
+    padding: 10px;
+    width: 45%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.summary {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.progress {
+    width: 100%;
+    background: #f0f0f0;
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 50%;
+    background: #28a745;
+    transition: width 0.5s ease-in-out;
+}
+
+.transactions ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f7f7f7;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+li.income {
+    border-left: 5px solid #28a745;
+}
+
+li.expense {
+    border-left: 5px solid #dc3545;
+}
+
+li:hover {
+    background: #eaeaea;
+}
+
+.delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
